@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magmo - Exclusive Ornaments Collection</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #9f5fb1; 
+    color: white; 
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white; 
+    text-decoration: none; 
+}
+
+nav a:hover {
+    text-decoration: underline; 
+}
+
+main {
+    padding: 20px;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product-item {
+    background-color: white; 
+    border: 1px solid #ccc;
+    border-radius: 5px; 
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+    width: 240px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.2s; 
+}
+
+.product-item:hover {
+    transform: scale(1.10); 
+}
+
+.product-item img {
+    max-width: 100%; 
+    height: auto;
+}
+
+.exclusive {
+    font-weight: bold;
+    color: #b6701a; 
+}
+.description {
+    margin: 10px 0;
+    font-style: italic; 
+}
+
+.price {
+    font-size: 1.5em;
+    color: #020e03;
+}
+
+footer {
+    background-color: #333; 
+    color: white; 
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+</style>
+<body>
+    <header>
+        <h1>Exclusive Ornaments Collection</h1>
+        
+    </header>
+
+    <main>
+        <section class="product-list">
+            <article class="product-item">
+                <img src="https://thefuncompany.in/cdn/shop/files/TFCboldandgoldbeadsandpearllayerednecklace_986c0842-34ad-4584-902d-89eb6cf1490e.jpg?v=1738838639" alt="Gold Necklace"width="200px" height="300px">
+                <h2 style="font-family:Italic">Gold Necklace</h2>
+                <p class="exclusive">Material: 18K Gold</p>
+                <p class="exclusive">Size: Adjustable</p>
+                <p class="description">A stunning gold necklace that adds elegance to any outfit.</p>
+                <p class="price">7,25,000/-</p>
+                <button>Add to Cart</button>
+            </article>
+            <article class="product-item">
+                <img src="https://unniyarcha.com/cdn/shop/files/Silver-Men_s-Stylish-Bracelet-Unniyarcha-Design-173567365.jpg?v=1725534581" alt="Silver Bracelet"width="200px" height="300px">
+                <h2 style="font-family:Italic">Silver Bracelet</h2>
+                <p class="exclusive">Material: Sterling Silver</p>
+                <p class="exclusive">Size: 7 inches</p>
+                <p class="description">A beautiful sterling silver bracelet perfect for any occasion.</p>
+                <p class="price">50,000/-</p>
+                <button>Add to Cart</button>
+            </article>
+            <article class="product-item">
+                <img src="https://kameswarijewellers.in/wp-content/uploads/sites/494/2023/12/der18-698-scaled.jpg" alt="Diamond Earrings"width="200px" height="300px">
+                <h2 style="font-family:Italic">Diamond Earrings</h2>
+                <p class="exclusive">Material: 14K White Gold</p>
+                <p class="exclusive">Size: 1.5 inches</p>
+                <p class="description">Exquisite diamond earrings that sparkle with every movement.</p>
+                <p class="price">2,50,000/-</p>
+                <button>Add to Cart</button>
+            </article>
+            <article class="product-item">
+                <img src="https://www.pearlparadise.com/cdn/shop/collections/dd1b7b063278ba69ca1be31c2637600e_bc364ae6-5be7-4114-a495-bb522ef456e3.jpg?v=1593615785&width=2400" alt="Pearl Necklace"width="200px" height="300px">
+                <h2 style="font-family:Italic">Pearl Necklace</h2>
+                <p class="exclusive">Material: Freshwater Pearls</p>
+                <p class="exclusive">Size: 18 inches</p>
+                <p class="description">A classic pearl necklace that never goes out of style.</p>
+                <p class="price">45,000/-</p>
+                <button>Add to Cart</button>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Magmo. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

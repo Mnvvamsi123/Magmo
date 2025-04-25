@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magmo - T-Shirts Collection</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; 
+}
+
+header {
+    background-color: #4CAF50; 
+    color: white; 
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+button:hover {
+    color:rgb(1, 15, 2);
+    text-decoration:none;
+
+}
+
+
+
+
+
+
+main {
+    padding: 20px;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product-item {
+    background-color: white; 
+    border: 1px solid #ccc;
+    border-radius: 5px; 
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+    width: 240px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.2s; 
+}
+
+.product-item:hover {
+    transform: scale(1.05);
+}
+
+.product-item img {
+    max-width: 100%; 
+    height: auto;
+}
+
+.price {
+    font-size: 1.5em;
+    color: #4CAF50; 
+}
+
+footer {
+    background-color: #333; 
+    color: white; 
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+</style>
+<body>
+    <header>
+        <h1>Magmo T-Shirts Collection</h1>
+       
+    </header>
+
+    <main>
+        <section class="product-list">
+            <article class="product-item">
+                <h2 style="font-family:Italic" >Classic T-Shirt</h2>
+                <img src="https://www.jiomart.com/images/product/original/rv5wcg4hd5/nonsense-on-fashion-prince-of-mists-men-printed-t-shirt-funky-style-in-half-sleeves-peach-extra-larg-product-images-rv5wcg4hd5-0-202212241806.jpg?im=Resize=(500,630)" alt="Classic T-Shirt"width="200px" height="300px">
+                
+                <p>A timeless piece for every wardrobe.</p>
+                <p class="price">4,500/-</p>
+                <button>Add to Cart</button>
+            </article>
+            <article class="product-item">
+                 <h2 style="font-family:Italic">Graphic Tshirt</h2>
+
+                <img src="https://i.etsystatic.com/39284344/r/il/cb1a83/4884364360/il_570xN.4884364360_b91v.jpg" alt="Graphic Tshirt"width="200px" height="300px">
+               
+                <p>Express yourself with stylish graphics.</p>
+                <p class="price">999/-</p>
+                <button>Add to Cart</button>
+            </article>
+            <article class="product-item">
+                <h2 style="font-family:Italic">Vintage T-Shirt</h2>
+                <img src="https://threadheads.com/cdn/shop/collections/retro-tshirts-online_5cfc74a6-9a8a-450d-b11b-f1e7163f1307.jpg?v=1687176470&width=2048" alt="Vintage T-Shirt"width="200px" height="300px">
+                
+                <p>Bring back the retro vibes!</p>
+                <p class="price">1,500/-</p>
+                <button>Add to Cart</button>
+            </article>
+            <article class="product-item">
+                <h2 style="font-family:Italic">Cotton T-Shirt</h2>
+                <img src="https://www.enamor.co.in/cdn/shop/files/ENAMOR_DAY-2_0335_Front.jpg?v=1719312345" alt="Cotton T-Shirt"width="200px" height="300px">
+                
+                <p style="font-family:Georgia, 'Times New Roman', Times, serif">Soft and comfortable for everyday wear.</p>
+                <p class="price">2,599/-</p>
+                <button>Add to Cart</button>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Magmo. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magmo -Shirts Collection</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; 
+}
+
+header {
+    background-color: #2f3208; 
+    color: white; 
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white; 
+    text-decoration: none; 
+}
+
+nav a:hover {
+    text-decoration: underline; 
+}
+
+main {
+    padding: 20px;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product-item {
+    background-color: white; 
+    border: 1px solid #ccc;
+    border-radius: 5px; 
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+    width: 240px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.2s; 
+}
+
+.product-item:hover {
+    transform: scale(1.05);
+}
+
+.product-item img {
+    max-width: 100%; 
+    height: auto;
+}
+
+.price {
+    font-size: 1.5em;
+    color: #4CAF50; 
+}
+
+footer {
+    background-color: #333; 
+    color: white; 
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+</style>
+<body>
+    <header>
+        <h1>Magmo Shirts Collection</h1>
+       
+    </header>
+
+    <main>
+        <section class="product-list">
+            <article class="product-item">
+                <h2 style="font-family:Italic">Printed-Shirt</h2>
+                <img src="https://assets.ajio.com/medias/sys_master/root/20240425/AitK/662a5c0a05ac7d77bb2ac316/-473Wx593H-466658768-red-MODEL.jpg" alt="Printed-Shirt"width="200px" height="300px">
+                
+                <p>A timeless piece for every wardrobe.</p>
+                <p class="price">2000/-</p>
+                <button>Add to Cart</button>
+            </article>
+            <article class="product-item">
+                 <h2 style="font-family:Italic">Plane shirts</h2>
+
+                <img src="https://images.meesho.com/images/products/387110328/cbvbk_512.webp" alt="Plane shirts"width="200px" height="300px">
+               
+                <p>Express yourself with stylish graphics.</p>
+                <p class="price">11,000/-</p>
+                <button>Add to Cart</button>
+            </article>
+            <article class="product-item">
+                <h2 style="font-family:Italic">silk-Shirts</h2>
+                <img src="https://ramrajcotton.in/cdn/shop/files/241224_Ecom_Ramraj19835.jpg?v=1735634468" alt="silk-Shirts"width="200px" height="300px">
+                
+                <p>Bring back the retro vibes!</p>
+                <p class="price">7,500/-</p>
+                <button>Add to Cart</button>
+            </article>
+            <article class="product-item">
+                <h2 style="font-family:Italic">Checks Shirt</h2>
+                <img src="https://www.globalrepublic.in/cdn/shop/files/SM3027115_1.webp?v=1717230601" alt="Cotton T-Shirt"width="200px" height="300px">
+                
+                <p>Soft and comfortable for everyday wear.</p>
+                <p class="price">4,599/-</p>
+                <button>Add to Cart</button>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Magmo. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

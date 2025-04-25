@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magmo - Fashion Wears</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; 
+}
+.product-item.hidden {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.product-item.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+footer form {
+    transition: transform 0.3s ease;
+}
+
+header {
+    background-image: url("https://wallpapershome.com/images/pages/ico_v/27143.jpg");
+    color: white; 
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+
+nav ul {
+   
+
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: rgb(15, 14, 14); 
+    text-decoration: none; 
+}
+
+nav a:hover {
+    text-decoration: underline; 
+}
+.container {
+    margin: 20px;
+}
+
+iframe {
+    background-color: white;
+}
+footer {
+    background-color: #333; 
+    color: white; 
+    padding: 20px;
+    text-align: center;
+}
+
+footer form {
+    max-width: 400px;
+    margin: auto;
+}
+
+footer label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+footer input, footer textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+footer button {
+    background-color: #4CAF50; 
+    color: white; 
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+footer button:hover {
+    background-color: #45a049; 
+}
+
+.product-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.product-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    background-color: #fff; 
+    border-radius: 5px; 
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+}
+</style>
+<body>
+    <header>
+        <h1 style="font-family:Georgia, 'Times New Roman', Times, serif">Welcome to Magmo</h1>
+        <nav>
+            <ul>
+                <li><a href="tshirts.html">T-shirts</a></li>
+                <li><a href="shirts.html">Shirts</a></li>
+                <li><a href="ornaments.html">Ornaments</a></li>
+                <li><a href="footwear.html">Footwear</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <img src="https://t3.ftcdn.net/jpg/04/63/74/54/360_F_463745476_fQ6EKEfofPQoXmv49AMNXcRUPsVVV3LL.jpg"width="720px"height="499px">
+    <img src="https://st.depositphotos.com/1016231/5085/i/450/depositphotos_50852169-Hipster-style-guy.-Fashion-man-standing-near-a-wooden-door.jpg"width="720px"height="499px">
+
+    <footer>
+        <h3>Contact Us</h3>
+        <form >
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        <p>&copy; 2023 Magmo. All Rights Reserved.</p>
+
+    </footer>
+    <script defer>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Typing animation for header title
+            const headerTitle = document.querySelector('header h1');
+            const originalText = headerTitle.textContent;
+            headerTitle.textContent = '';
+            let index = 0;
+        
+            function typeEffect() {
+                if (index < originalText.length) {
+                    headerTitle.textContent += originalText.charAt(index);
+                    index++;
+                    setTimeout(typeEffect, 100);
+                }
+            }
+            typeEffect();
+        
+            // Intersection Observer for product image animation
+            const productItems = document.querySelectorAll('.product-item');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate');
+                    }
+                });
+            }, { threshold: 0.3 });
+        
+            productItems.forEach(item => {
+                item.classList.add('hidden');
+                observer.observe(item);
+            });
+        
+            // Contact form animation on focus and submit
+            const form = document.querySelector('footer form');
+            const inputs = form.querySelectorAll('input, textarea');
+        
+            inputs.forEach(input => {
+                input.addEventListener('focus', () => {
+                    input.style.transition = '0.3s';
+                    input.style.boxShadow = '0 0 5px #4CAF50';
+                });
+        
+                input.addEventListener('blur', () => {
+                    input.style.boxShadow = 'none';
+                });
+            });
+        
+            form.addEventListener('submit', e => {
+                e.preventDefault();
+                form.style.transition = '0.5s';
+                form.style.transform = 'scale(1.03)';
+                setTimeout(() => {
+                    alert('Thank you for contacting us!');
+                    form.reset();
+                    form.style.transform = 'scale(1)';
+                }, 300);
+            });
+        });
+        </script>
+        
+</body>
+
+</html>
